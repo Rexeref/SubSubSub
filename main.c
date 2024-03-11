@@ -10,13 +10,13 @@
 /*
 Cose da fare:
     ALGORITMO
-    Ordinati per dimensione, dividendo lo spazio in spazi sempre più piccoli si può semplificare la quantità
+    Ordinati per dimensione, dividendo lo spazio in spazi sempre piï¿½ piccoli si puï¿½ semplificare la quantitï¿½
     di passaggi dovuti per calcolare i primi ip delle subnet
 
     -----------------------------------------------------------------
     |  512               |  512               |  256     |64|64|    |
     -----------------------------------------------------------------
-    In questo caso in 3 slot da 512 (1536) ho messo 1408 host di 5 sottoreti diverse senza però lasciare spazi inutilizzati fra gli host.
+    In questo caso in 3 slot da 512 (1536) ho messo 1408 host di 5 sottoreti diverse senza perï¿½ lasciare spazi inutilizzati fra gli host.
 */
 
 typedef struct
@@ -40,9 +40,9 @@ typedef struct
 
 void printIp(ip input); // printa l'ip dato formattato
 void printNet(net input); // printa la rete data formattata
-int numberIsInRange(int input); // Controlla se il numero è nel range che parte da 0 e finisce con 255, se non valido outputta -1
+int numberIsInRange(int input); // Controlla se il numero ï¿½ nel range che parte da 0 e finisce con 255, se non valido outputta -1
 ip fillIpIfValid(int element1, int element2, int element3, int element4); // Valida e riempie uno spazio per ip calcolando in automatico il cidr
-ip fillIpIfValidWithCidr(int element1, int element2, int element3, int element4, int cidr); // stessa cosa ma il cidr è manuale
+ip fillIpIfValidWithCidr(int element1, int element2, int element3, int element4, int cidr); // stessa cosa ma il cidr ï¿½ manuale
 int whatCidrMaskContains(int input); // calcola la maschera di rete minima per contenere il numero di host indicati in una singola rete
 int calculateCidrClassfull(int element1); // calcola il cidr dato il primo elemento di un ip usando il classfull
 net prepareSubNet(int numberOfElements, char name[16]); // Inizializza i dati della subnetmask
@@ -109,7 +109,8 @@ int main()
         {
             printf("\e[0mInserisci numero host richiesti:\n> \e[0;96m");
             scanf("%d", &inputInt);
-            fflush(stdin);printf("\e[0;93m");
+            fflush(stdin);
+            printf("\e[0;93m");
 
             free(appoggioSubNetworks);
             appoggioSubNetworks = malloc(dimensioneArrayDinamico*sizeof(net));
@@ -225,7 +226,7 @@ void printNet(net input)
 
 int whatCidrMaskContains(int input)
 {
-    int output, contains = 0, modifiedInput = input + 3; // MODIFIED INPUT è il valore di input tenendo conto del fatto della presenza degli indirizzi obbligatori (Gateway, name e broadcast)
+    int output, contains = 0, modifiedInput = input + 3; // MODIFIED INPUT ï¿½ il valore di input tenendo conto del fatto della presenza degli indirizzi obbligatori (Gateway, name e broadcast)
     for(output = 0; output <= 32 && contains == 0; output++)
     {
         if( pow( (double) 2, (double) output) >= modifiedInput )
