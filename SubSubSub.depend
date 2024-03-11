@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1681421819 source:c:\users\rexer\desktop\subsubsub\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1681462686 
+
+1681462686 source:f:\subsubsub 0.5\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+
+1681469482 source:/home/rexeref/SubSubSub 0.5/main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+
+1681481969 source:c:\users\rexer\desktop\subsubsub 1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<windows.h>
+
