@@ -1,7 +1,7 @@
 <h2 align="center">SubSubSub</h2>
 
 <p>
-    Piccolo programma in c che permette la creazione di Subnets data una rete.
+    Small C program that allows the creation of subnets given a network.
 </p>
 
 <p align="center">
